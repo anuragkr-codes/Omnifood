@@ -37,6 +37,12 @@
   box-sizing: border-box;
 }
 
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+  /* the above percentage is used to respect the users browser's font-size settings. */
+}
+
 body {
   font-family: sans-serif;
   line-height: 1;
