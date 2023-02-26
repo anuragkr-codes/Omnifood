@@ -186,6 +186,13 @@ body {
   /* not using none above. To remove the distortion caused. */
 }
 
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
 /* HELPER / SETTINGS CLASSES  */
 
 .margin-right-sm {
