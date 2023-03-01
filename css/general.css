@@ -26,9 +26,12 @@
     - Tints: #fdf2e9 #fae5d3 #eb984e 
     - Shades: #cf711f #45260a
     - Accents:
-    - Greys: #555 #333
-    #6f6f6f lighest gray allowed on #fdf2e9
-    
+    - Greys:
+    #888
+    #767676 (lighest gray allowed on #fff)
+    #6f6f6f (lighest gray allowed on #fd2e9)
+    #555
+    #333
     
     --- 03 SHADOWS
 
