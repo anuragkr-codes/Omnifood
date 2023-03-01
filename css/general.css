@@ -23,8 +23,8 @@
     
     - Primary: #e67e22
      
-    - Tints: #fdf2e9 #fae5d3 #eb984e
-    - Shades: #cf711f 
+    - Tints: #fdf2e9 #fae5d3 #eb984e 
+    - Shades: #cf711f #45260a
     - Accents:
     - Greys: #555 #333
     #6f6f6f lighest gray allowed on #fdf2e9
@@ -138,6 +138,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -147,6 +148,11 @@ body {
   border-radius: 9px;
   font-weight: 600;
   transition: all 0.3s;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -176,6 +182,18 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background: #fff;
+  color: #555;
+}
+
 .link:link,
 .link:visited {
   display: inline;
@@ -198,6 +216,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* HELPER / SETTINGS CLASSES  */
