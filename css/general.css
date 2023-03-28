@@ -61,6 +61,9 @@ html {
   /* the above percentage is used to respect the users browser's font-size settings. */
 
   overflow-x: hidden;
+
+  /* Does NOT work on Safari. So we'll use some js to fix this */
+  /* scroll-behavior: smooth; */
 }
 
 body {
