@@ -14,6 +14,7 @@
     Small: 1.05
     Medium: 1.2
     Paragraph default: 1.6
+    Large: 1.8;
   
     -LETTER SPACING
     0.75px 
@@ -58,6 +59,8 @@ html {
   /* font-size: 10px; */
   font-size: 62.5%;
   /* the above percentage is used to respect the users browser's font-size settings. */
+
+  overflow-x: hidden;
 }
 
 body {
@@ -65,6 +68,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
 }
 
 /* ******************************* */
@@ -100,9 +106,9 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.grid--5cols {
+/* .grid--5cols {
   grid-template-columns: repeat(5, 1fr);
-}
+} */
 
 .grid--center-v {
   align-items: center;
@@ -223,6 +229,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
 }
 
 *:focus {
