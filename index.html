@@ -122,11 +122,17 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="content/img/hero.webp"
-              alt="Woman enjoying food, meals in storage container and food bowls on a table"
-              class="hero-img"
-            />
+            <picture>
+              <source srcset="content/img/hero.webp" type="image/webp" />
+              <source srcset="content/img/hero-min.png" type="image/png" />
+
+              <img
+                src="content/img/hero-min.png"
+                alt="Woman enjoying food, meals in storage container and food bowls on a table"
+                class="hero-img"
+              />
+            </picture>
+
             <!-- <img
               src="content/img/hero.png"
               alt="Woman enjoying food, meals in storage container and food bowls on a table"
